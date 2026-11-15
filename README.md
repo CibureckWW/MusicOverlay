@@ -8,7 +8,7 @@
 
 Мини-плеер на панели задач:
 
-![taskbar](MusicOverlay/files/assets/preview_taskbar.png)
+![taskbar](files/MusicOverlay/assets/preview_taskbar.png)
 
 ## Что умеет
 
