@@ -4,11 +4,11 @@
 Яндекс Музыки, VK/YouTube в браузере, VLC, AIMP, foobar2000 и любого другого плеера,
 который виден в системном микшере Windows (SMTC).
 
-![widget](assets/preview.png)
+![widget](MusicOverlay/files/assets/preview.png)
 
 Мини-плеер на панели задач:
 
-![taskbar](assets/preview_taskbar.png)
+![taskbar](MusicOverlay/files/assets/preview_taskbar.png)
 
 ## Что умеет
 
