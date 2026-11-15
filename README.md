@@ -1,5 +1,4 @@
 # MusicOverlay
-# MusicOverlay
 
 Плавающий виджет для Windows, который показывает **что играет прямо сейчас** — из Spotify,
 Яндекс Музыки, VK/YouTube в браузере, VLC, AIMP, foobar2000 и любого другого плеера,
