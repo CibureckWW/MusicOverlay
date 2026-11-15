@@ -47,6 +47,10 @@
 
 ## Быстрый запуск (готовая сборка)
 
+В репозитории хранится только исходный код — готовый `MusicOverlay.exe` в него не
+входит. Соберите его командой `build_exe.bat` (см. раздел ниже) или возьмите готовую
+сборку.
+
 1. Скачайте файл установщика (Setup) из раздела **`Releases`**
 2. Запустите **`MusicOverlaySetup`** и следуйте инструкциям мастера установки.
 2. Запустите **`MusicOverlay.exe`** — виджет появится в правом верхнем углу экрана.
@@ -58,6 +62,42 @@
 можно показать виджет или открыть настройки.
 
 Запустить с автозагрузкой: `Win+R` → `shell:startup` → положить туда ярлык на `MusicOverlay.exe`.
+
+## Запуск из исходников
+
+Требуется Python **3.10–3.12** (пакет `winsdk` не поддерживает 3.13+).
+
+```bat
+cd C:\path\to\MusicOverlay
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+.venv\Scripts\python MusicOverlay.py
+```
+
+Или просто дважды кликнуть `run.bat` (запускает без консольного окна через `pythonw`).
+
+Проверить внешний вид без музыки:
+
+```bat
+.venv\Scripts\python MusicOverlay.py --demo
+```
+
+Отрисовать превью карточки в PNG (в том числе компактной полоски для панели задач):
+
+```bat
+.venv\Scripts\python tools\preview.py
+.venv\Scripts\python tools\preview.py --taskbar
+```
+
+## Сборка одного exe
+
+```bat
+build_exe.bat
+```
+
+Результат — `dist\MusicOverlay.exe`, скрипт сразу копирует его в корень папки как
+`MusicOverlay.exe` (один файл, Python не нужен).
+Сборка использует PyInstaller и `MusicOverlay.spec`.
 
 ## Настройки
 
